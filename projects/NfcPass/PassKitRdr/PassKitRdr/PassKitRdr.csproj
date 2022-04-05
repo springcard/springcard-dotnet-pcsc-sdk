@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E0284033-8D05-4BA9-B653-E80C68DD41D9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PassKitRdr</RootNamespace>
+    <AssemblyName>PassKitRdr</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\_output\NfcPassKitRdr</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\_output\NfcPass\PassKitRdr\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>passkitrdr.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '.NET 3.5|AnyCPU'">
+    <OutputPath>bin\.NET 3.5\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\..\..\..\_libraries\net48\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="SpringCard.LibCs">
+      <HintPath>..\..\..\..\_libraries\net48\SpringCard.LibCs.dll</HintPath>
+    </Reference>
+    <Reference Include="SpringCard.LibCs.Windows">
+      <HintPath>..\..\..\..\_libraries\net48\SpringCard.LibCs.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="SpringCard.LibCs.Windows.Forms">
+      <HintPath>..\..\..\..\_libraries\net48\SpringCard.LibCs.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="SpringCard.Licenses">
+      <HintPath>..\..\..\..\_libraries\net48\SpringCard.Licenses.dll</HintPath>
+    </Reference>
+    <Reference Include="SpringCard.Licenses.Forms">
+      <HintPath>..\..\..\..\_libraries\net48\SpringCard.Licenses.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="SpringCard.PCSC">
+      <HintPath>..\..\..\..\_libraries\net48\SpringCard.PCSC.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppleVASConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppleVASConfigForm.Designer.cs">
+      <DependentUpon>AppleVASConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AppleVASConfigForm.resx">
+      <DependentUpon>AppleVASConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\refresh-page-arrow-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\play-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\pause-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\springcard-logoblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\cross-remove-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\springcard-logowhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\springcard-r-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="passkitrdr.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SpringCard.AppleVAS\SpringCard.AppleVAS.csproj">
+      <Project>{85d99c83-99ce-4a86-8c4f-0901803d2efb}</Project>
+      <Name>SpringCard.AppleVAS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

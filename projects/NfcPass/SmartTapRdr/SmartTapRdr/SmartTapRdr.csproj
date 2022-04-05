@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C48775A-286E-41C9-873C-8D9EFBBAA379}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SmartTapRdr</RootNamespace>
+    <AssemblyName>SmartTapRdr</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>false</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\_output\NfcPass\SmartTapRdr\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\_output\NfcPass\SmartTapRdr\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>smarttaprdr.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\_libraries\net48\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="SpringCard.LibCs">
+      <HintPath>..\..\..\..\..\_libraries\net48\SpringCard.LibCs.dll</HintPath>
+    </Reference>
+    <Reference Include="SpringCard.LibCs.Windows, Version=22.9.8096.20237, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\_libraries\net48\SpringCard.LibCs.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="SpringCard.LibCs.Windows.Forms">
+      <HintPath>..\..\..\..\_libraries\net48\SpringCard.LibCs.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="SpringCard.Licenses">
+      <HintPath>..\..\..\..\..\_libraries\net48\SpringCard.Licenses.dll</HintPath>
+    </Reference>
+    <Reference Include="SpringCard.Licenses.Forms">
+      <HintPath>..\..\..\..\_libraries\net48\SpringCard.Licenses.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="SpringCard.PCSC">
+      <HintPath>..\..\..\..\..\_libraries\net48\SpringCard.PCSC.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GoogleVASConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoogleVASConfigForm.Designer.cs">
+      <DependentUpon>GoogleVASConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoogleVASPublicKeyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoogleVASPublicKeyForm.Designer.cs">
+      <DependentUpon>GoogleVASPublicKeyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GoogleVASConfigForm.resx">
+      <DependentUpon>GoogleVASConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoogleVASPublicKeyForm.resx">
+      <DependentUpon>GoogleVASPublicKeyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SpringCard.GoogleVAS\SpringCard.GoogleVAS.csproj">
+      <Project>{349a7992-a65a-460f-b229-d6b87a14a5d9}</Project>
+      <Name>SpringCard.GoogleVAS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="smarttaprdr.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

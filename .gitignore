@@ -1,0 +1,10 @@
+_*/
+packages/
+obj/
+bin/
+.vs/
+*.obj
+*.bak
+*.exe
+*.dll
+*.pdb

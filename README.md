@@ -4,6 +4,8 @@ This is the SDK published by SpringCard to use PC/SC smart card readers from .NE
 
 This SDK is available for free to all Springcard’s customers, and helps to use with SpringCard’s PC/SC products.
 
+Most of the sample applications provided in this SDK as source code as available as ready-to-use binaries in the SpringCard PC/SC QuickStart setup package (SQ1363): [www.springcard.com/download/find/file/sq13163](https://www.springcard.com/en/download/find/file/sq13163)
+
 ## Legal disclaimer
 
 THE SDK IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
@@ -81,11 +83,11 @@ If you're targetting a different plateform, see
 
 ### 'Beginner' Visual Basic sample
 
-Directory `projects/vb` contains a single project named `getCardUid`. This project shows how to add the `SpringCard.PCSC.dll` assembly to a VB project, and how to get a card's UID (protocol-level unique identifier) using the `FFCA000000` APDU.
+Directory `projects/beginners/vb` contains a single project named `getCardUid`. This project shows how to add the `SpringCard.PCSC.dll` assembly to a VB project, and how to get a card's UID (protocol-level unique identifier) using the `FFCA000000` APDU.
 
 ### 'Beginners' C# samples
 
-Directory `projects/csharp` contains simple projects showing a few interesting use cases:
+Directory `projects/beginners/csharp` contains simple projects showing a few interesting use cases:
 
 * **listReaders**: It’s the simplest example, it lists all the PC/SC readers installed on  the computer. That’s the project to start with.
 
@@ -145,7 +147,7 @@ An application to "explore" plain old memory cards like Mifare Classic.
 
 ### Apple VAS and Google SmartTap demos
 
-Some SpringCard PC/SC readers (Prox'N'Roll HSP, Puck and SpringPark) have been certified by Apple to read Apple Wallet NFC passes (Apple VAS with ECP) and by Google to read Smart Tap NFC passes. SpringCard offers libraries to implement the relevant secure transaction with the mobile phones or smart watches to retrieve the content of the pass. The `Pass` directory contains
+Some SpringCard PC/SC readers (Prox'N'Roll HSP, Puck and SpringPark) have been certified by Apple to read Apple Wallet NFC passes (Apple VAS with ECP) and by Google to read Smart Tap NFC passes. SpringCard offers libraries to implement the relevant secure transaction with the mobile phones or smart watches to retrieve the content of the pass. The `NfcPass` directory contains
 
 - `PassKitRdr`, a demo that reads Apple Wallet NFC passes
 - `SmartTapRdr`, a demo that reads Google Smart Tap NFC passes
@@ -154,6 +156,12 @@ Some SpringCard PC/SC readers (Prox'N'Roll HSP, Puck and SpringPark) have been c
 The underlying libraries are <u>not</u> open source and are subject to a license fee. Therefore, the applications will stop working after 10 minutes unless a valid license string is provided.
 
 ## Building the applications
+
+### Retrieve the libraries
+
+First step is to compile the required libraries from repository [springcard-dotnet-libraries repository](https://github.com/springcard/springcard-dotnet-libraries). Alternatively, you may download and install the PC/SC QuickStart (SQ13163) from [www.springcard.com/download/find/file/sq13163](https://www.springcard.com/fr/download/find/file/sq13163) and find the DLL in the installation directory.
+
+Copy these libraries in the `_libraries\net48` sub-directory before building this repository's projects.
 
 ### Net48 targets
 
