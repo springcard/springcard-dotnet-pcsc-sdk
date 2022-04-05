@@ -159,7 +159,9 @@ The underlying libraries are <u>not</u> open source and are subject to a license
 
 ### Dependencies
 
-First step is to compile the required libraries from repository [springcard-dotnet-libraries repository](https://github.com/springcard/springcard-dotnet-libraries). You may also download the precompiled binaries from [github.com/springcard/springcard-dotnet-libraries/releases](https://github.com/springcard/springcard-dotnet-libraries/releases). Just download the .ZIP file and extract its content as `_libraries` sub-directory in this repository's main directory.
+First step is to compile the required libraries from repository [springcard-dotnet-libraries repository](https://github.com/springcard/springcard-dotnet-libraries).
+
+You may also download the precompiled binaries from [github.com/springcard/springcard-dotnet-libraries/releases](https://github.com/springcard/springcard-dotnet-libraries/releases). Just download the .ZIP file and extract its content as `_libraries` sub-directory in this repository's main directory.
 
 Alternatively, you may download and install the PC/SC QuickStart (SQ13163) from [www.springcard.com/download/find/file/sq13163](https://www.springcard.com/fr/download/find/file/sq13163) and find the DLL in the installation directory. Copy the libraries in the `_libraries\net48` sub-directory.
 
