@@ -35,11 +35,11 @@
   <ItemGroup>
     <Reference Include="SpringCard.AppleVas, Version=20.7.8096.27507, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\_output\NfcPass\PassKitRdr\SpringCard.AppleVas.dll</HintPath>
+      <HintPath>..\..\..\..\_libraries\net48\SpringCard.AppleVas.dll</HintPath>
     </Reference>
     <Reference Include="SpringCard.GoogleVas, Version=20.7.8096.27447, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\_output\NfcPass\SmartTapRdr\SpringCard.GoogleVas.dll</HintPath>
+      <HintPath>..\..\..\..\_libraries\net48\SpringCard.GoogleVas.dll</HintPath>
     </Reference>
     <Reference Include="SpringCard.LibCs">
       <HintPath>..\..\..\..\_libraries\net48\SpringCard.LibCs.dll</HintPath>

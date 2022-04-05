@@ -48,6 +48,10 @@
     <Reference Include="BouncyCastle.Crypto">
       <HintPath>..\..\..\..\_libraries\net48\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
+    <Reference Include="SpringCard.AppleVas, Version=22.14.8130.30295, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\_libraries\net48\SpringCard.AppleVas.dll</HintPath>
+    </Reference>
     <Reference Include="SpringCard.LibCs">
       <HintPath>..\..\..\..\_libraries\net48\SpringCard.LibCs.dll</HintPath>
     </Reference>
@@ -151,12 +155,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="passkitrdr.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SpringCard.AppleVAS\SpringCard.AppleVAS.csproj">
-      <Project>{85d99c83-99ce-4a86-8c4f-0901803d2efb}</Project>
-      <Name>SpringCard.AppleVAS</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

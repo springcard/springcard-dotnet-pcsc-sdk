@@ -37,10 +37,10 @@
       <HintPath>..\..\..\..\_libraries\net48\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="SpringCard.AppleVas">
-      <HintPath>..\..\..\..\_output\NfcPass\PassKitRdr\SpringCard.AppleVas.dll</HintPath>
+      <HintPath>..\..\..\..\_libraries\net48\SpringCard.AppleVas.dll</HintPath>
     </Reference>
     <Reference Include="SpringCard.GoogleVas">
-      <HintPath>..\..\..\..\_output\NfcPass\SmartTapRdr\SpringCard.GoogleVas.dll</HintPath>
+      <HintPath>..\..\..\..\_libraries\net48\SpringCard.GoogleVas.dll</HintPath>
     </Reference>
     <Reference Include="SpringCard.LibCs">
       <HintPath>..\..\..\..\_libraries\net48\SpringCard.LibCs.dll</HintPath>
