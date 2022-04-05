@@ -107,8 +107,6 @@ Directory `projects/csharp` contains simple projects showing a few interesting u
 
 Our reference application, showing how to enumerate the PC/SC readers using `SCardListReaders`, monitor their status using `SCardGetStatusChange` and `SCardStatus`, connect to a reader or a card using `SCardConnect`, exchange smart card commands/responses (APDU) using `SCardTransmit` and control the reader directly using `SCardControl`.
 
-![image-20220405141703233](C:\Users\johann.d\AppData\Roaming\Typora\typora-user-images\image-20220405141703233.png)
-
 *C#, location is `projects/PcscDiag2`.*
 
 ### PcscScriptor
