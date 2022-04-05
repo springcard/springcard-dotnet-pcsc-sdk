@@ -43,6 +43,9 @@
     <Reference Include="SpringCard.LibCs">
       <HintPath>..\..\..\..\..\_libraries\net48\SpringCard.LibCs.dll</HintPath>
     </Reference>
+    <Reference Include="SpringCard.LibCs.Translations">
+      <HintPath>..\..\..\..\_libraries\net48\SpringCard.LibCs.Translations.dll</HintPath>
+    </Reference>
     <Reference Include="SpringCard.LibCs.Windows, Version=22.9.8096.20237, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\_libraries\net48\SpringCard.LibCs.Windows.dll</HintPath>

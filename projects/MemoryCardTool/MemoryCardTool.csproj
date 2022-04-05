@@ -59,9 +59,15 @@
     <OutputPath>..\..\_output\MemoryCardTool\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SpringCard.Bluetooth">
+      <HintPath>..\..\_libraries\net48\SpringCard.Bluetooth.dll</HintPath>
+    </Reference>
     <Reference Include="SpringCard.LibCs, Version=19.8.7198.26873, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\_libraries\net48\SpringCard.LibCs.dll</HintPath>
+    </Reference>
+    <Reference Include="SpringCard.LibCs.Translations">
+      <HintPath>..\..\_libraries\net48\SpringCard.LibCs.Translations.dll</HintPath>
     </Reference>
     <Reference Include="SpringCard.LibCs.Windows, Version=19.2.7198.26876, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -170,6 +176,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="HexBox\HexBox.resx" />
     <EmbeddedResource Include="KeyForm.resx">
       <DependentUpon>KeyForm.cs</DependentUpon>
     </EmbeddedResource>

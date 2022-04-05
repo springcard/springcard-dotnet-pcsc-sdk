@@ -127,11 +127,11 @@ namespace PcscDiag2
             // eMode
             // 
             this.eMode.BackColor = System.Drawing.SystemColors.Window;
-            this.eMode.Font = new System.Drawing.Font("Consolas", 8.25F);
+            this.eMode.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eMode.Location = new System.Drawing.Point(691, 11);
             this.eMode.Name = "eMode";
             this.eMode.ReadOnly = true;
-            this.eMode.Size = new System.Drawing.Size(81, 20);
+            this.eMode.Size = new System.Drawing.Size(81, 23);
             this.eMode.TabIndex = 7;
             // 
             // label29
@@ -148,11 +148,11 @@ namespace PcscDiag2
             // eProtocol
             // 
             this.eProtocol.BackColor = System.Drawing.SystemColors.Window;
-            this.eProtocol.Font = new System.Drawing.Font("Consolas", 8.25F);
+            this.eProtocol.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eProtocol.Location = new System.Drawing.Point(573, 11);
             this.eProtocol.Name = "eProtocol";
             this.eProtocol.ReadOnly = true;
-            this.eProtocol.Size = new System.Drawing.Size(69, 20);
+            this.eProtocol.Size = new System.Drawing.Size(69, 23);
             this.eProtocol.TabIndex = 5;
             // 
             // label28
@@ -169,11 +169,11 @@ namespace PcscDiag2
             // eCardAtr
             // 
             this.eCardAtr.BackColor = System.Drawing.SystemColors.Window;
-            this.eCardAtr.Font = new System.Drawing.Font("Consolas", 8.25F);
+            this.eCardAtr.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eCardAtr.Location = new System.Drawing.Point(78, 11);
             this.eCardAtr.Name = "eCardAtr";
             this.eCardAtr.ReadOnly = true;
-            this.eCardAtr.Size = new System.Drawing.Size(434, 20);
+            this.eCardAtr.Size = new System.Drawing.Size(434, 23);
             this.eCardAtr.TabIndex = 3;
             // 
             // label10
@@ -376,11 +376,11 @@ namespace PcscDiag2
             // eTransmitError
             // 
             this.eTransmitError.BackColor = System.Drawing.SystemColors.Control;
-            this.eTransmitError.Font = new System.Drawing.Font("Consolas", 8.25F);
+            this.eTransmitError.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eTransmitError.Location = new System.Drawing.Point(6, 465);
             this.eTransmitError.Name = "eTransmitError";
             this.eTransmitError.ReadOnly = true;
-            this.eTransmitError.Size = new System.Drawing.Size(82, 20);
+            this.eTransmitError.Size = new System.Drawing.Size(82, 23);
             this.eTransmitError.TabIndex = 27;
             this.eTransmitError.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -391,7 +391,7 @@ namespace PcscDiag2
             this.label9.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label9.Location = new System.Drawing.Point(6, 449);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(56, 13);
+            this.label9.Size = new System.Drawing.Size(60, 13);
             this.label9.TabIndex = 26;
             this.label9.Text = "Error code";
             // 
@@ -402,7 +402,7 @@ namespace PcscDiag2
             this.label23.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label23.Location = new System.Drawing.Point(94, 449);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(62, 13);
+            this.label23.Size = new System.Drawing.Size(68, 13);
             this.label23.TabIndex = 25;
             this.label23.Text = "Explanation";
             // 
@@ -418,11 +418,11 @@ namespace PcscDiag2
             // eStatusWord
             // 
             this.eStatusWord.BackColor = System.Drawing.SystemColors.Control;
-            this.eStatusWord.Font = new System.Drawing.Font("Consolas", 8.25F);
+            this.eStatusWord.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eStatusWord.Location = new System.Drawing.Point(6, 423);
             this.eStatusWord.Name = "eStatusWord";
             this.eStatusWord.ReadOnly = true;
-            this.eStatusWord.Size = new System.Drawing.Size(82, 20);
+            this.eStatusWord.Size = new System.Drawing.Size(82, 23);
             this.eStatusWord.TabIndex = 19;
             this.eStatusWord.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -433,7 +433,7 @@ namespace PcscDiag2
             this.label21.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label21.Location = new System.Drawing.Point(6, 407);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(66, 13);
+            this.label21.Size = new System.Drawing.Size(71, 13);
             this.label21.TabIndex = 18;
             this.label21.Text = "Status Word";
             // 
@@ -444,7 +444,7 @@ namespace PcscDiag2
             this.label22.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label22.Location = new System.Drawing.Point(94, 407);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(48, 13);
+            this.label22.Size = new System.Drawing.Size(53, 13);
             this.label22.TabIndex = 17;
             this.label22.Text = "Meaning";
             // 
@@ -530,7 +530,7 @@ namespace PcscDiag2
             this.label5.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label5.Location = new System.Drawing.Point(6, 251);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.Size = new System.Drawing.Size(39, 13);
             this.label5.TabIndex = 9;
             this.label5.Text = "Offset";
             // 
@@ -541,7 +541,7 @@ namespace PcscDiag2
             this.label6.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label6.Location = new System.Drawing.Point(490, 251);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 13);
+            this.label6.Size = new System.Drawing.Size(92, 13);
             this.label6.TabIndex = 8;
             this.label6.Text = "ASCII translation";
             // 
@@ -552,7 +552,7 @@ namespace PcscDiag2
             this.label7.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label7.Location = new System.Drawing.Point(90, 251);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 13);
+            this.label7.Size = new System.Drawing.Size(101, 13);
             this.label7.TabIndex = 7;
             this.label7.Text = "Hexadecimal value";
             // 
@@ -573,7 +573,7 @@ namespace PcscDiag2
             this.label4.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label4.Location = new System.Drawing.Point(6, 30);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(39, 13);
             this.label4.TabIndex = 5;
             this.label4.Text = "Offset";
             // 
@@ -584,7 +584,7 @@ namespace PcscDiag2
             this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label3.Location = new System.Drawing.Point(490, 30);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 13);
+            this.label3.Size = new System.Drawing.Size(92, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "ASCII translation";
             // 
@@ -595,7 +595,7 @@ namespace PcscDiag2
             this.label2.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label2.Location = new System.Drawing.Point(90, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 13);
+            this.label2.Size = new System.Drawing.Size(100, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Hexadecimal entry";
             // 
@@ -612,8 +612,7 @@ namespace PcscDiag2
             // hexBoxRApdu
             // 
             this.hexBoxRApdu.BackColor = System.Drawing.SystemColors.Control;
-            this.hexBoxRApdu.Font = new System.Drawing.Font("Consolas", 8.25F);
-            this.hexBoxRApdu.LineInfoForeColor = System.Drawing.Color.Empty;
+            this.hexBoxRApdu.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hexBoxRApdu.LineInfoVisible = true;
             this.hexBoxRApdu.Location = new System.Drawing.Point(6, 267);
             this.hexBoxRApdu.Name = "hexBoxRApdu";
@@ -627,8 +626,7 @@ namespace PcscDiag2
             // 
             // hexBoxCApdu
             // 
-            this.hexBoxCApdu.Font = new System.Drawing.Font("Consolas", 8.25F);
-            this.hexBoxCApdu.LineInfoForeColor = System.Drawing.Color.Empty;
+            this.hexBoxCApdu.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hexBoxCApdu.LineInfoVisible = true;
             this.hexBoxCApdu.Location = new System.Drawing.Point(6, 46);
             this.hexBoxCApdu.Name = "hexBoxCApdu";
@@ -684,11 +682,11 @@ namespace PcscDiag2
             // eControlError
             // 
             this.eControlError.BackColor = System.Drawing.SystemColors.Control;
-            this.eControlError.Font = new System.Drawing.Font("Consolas", 8.25F);
+            this.eControlError.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eControlError.Location = new System.Drawing.Point(6, 465);
             this.eControlError.Name = "eControlError";
             this.eControlError.ReadOnly = true;
-            this.eControlError.Size = new System.Drawing.Size(82, 20);
+            this.eControlError.Size = new System.Drawing.Size(82, 23);
             this.eControlError.TabIndex = 36;
             this.eControlError.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -699,7 +697,7 @@ namespace PcscDiag2
             this.label24.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label24.Location = new System.Drawing.Point(6, 449);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(56, 13);
+            this.label24.Size = new System.Drawing.Size(60, 13);
             this.label24.TabIndex = 35;
             this.label24.Text = "Error code";
             // 
@@ -710,7 +708,7 @@ namespace PcscDiag2
             this.label25.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label25.Location = new System.Drawing.Point(94, 449);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(62, 13);
+            this.label25.Size = new System.Drawing.Size(68, 13);
             this.label25.TabIndex = 34;
             this.label25.Text = "Explanation";
             // 
@@ -726,11 +724,11 @@ namespace PcscDiag2
             // eResultByte
             // 
             this.eResultByte.BackColor = System.Drawing.SystemColors.Control;
-            this.eResultByte.Font = new System.Drawing.Font("Consolas", 8.25F);
+            this.eResultByte.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eResultByte.Location = new System.Drawing.Point(6, 423);
             this.eResultByte.Name = "eResultByte";
             this.eResultByte.ReadOnly = true;
-            this.eResultByte.Size = new System.Drawing.Size(82, 20);
+            this.eResultByte.Size = new System.Drawing.Size(82, 23);
             this.eResultByte.TabIndex = 32;
             this.eResultByte.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -741,7 +739,7 @@ namespace PcscDiag2
             this.label26.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label26.Location = new System.Drawing.Point(6, 407);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(60, 13);
+            this.label26.Size = new System.Drawing.Size(64, 13);
             this.label26.TabIndex = 31;
             this.label26.Text = "Result byte";
             // 
@@ -752,7 +750,7 @@ namespace PcscDiag2
             this.label27.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label27.Location = new System.Drawing.Point(94, 407);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(48, 13);
+            this.label27.Size = new System.Drawing.Size(53, 13);
             this.label27.TabIndex = 30;
             this.label27.Text = "Meaning";
             // 
@@ -816,7 +814,7 @@ namespace PcscDiag2
             this.label11.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label11.Location = new System.Drawing.Point(6, 251);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(35, 13);
+            this.label11.Size = new System.Drawing.Size(39, 13);
             this.label11.TabIndex = 24;
             this.label11.Text = "Offset";
             // 
@@ -827,7 +825,7 @@ namespace PcscDiag2
             this.label12.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label12.Location = new System.Drawing.Point(490, 251);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(85, 13);
+            this.label12.Size = new System.Drawing.Size(92, 13);
             this.label12.TabIndex = 23;
             this.label12.Text = "ASCII translation";
             // 
@@ -838,7 +836,7 @@ namespace PcscDiag2
             this.label13.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label13.Location = new System.Drawing.Point(90, 251);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(97, 13);
+            this.label13.Size = new System.Drawing.Size(101, 13);
             this.label13.TabIndex = 22;
             this.label13.Text = "Hexadecimal value";
             // 
@@ -859,7 +857,7 @@ namespace PcscDiag2
             this.label15.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label15.Location = new System.Drawing.Point(6, 30);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(35, 13);
+            this.label15.Size = new System.Drawing.Size(39, 13);
             this.label15.TabIndex = 20;
             this.label15.Text = "Offset";
             // 
@@ -870,7 +868,7 @@ namespace PcscDiag2
             this.label16.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label16.Location = new System.Drawing.Point(490, 30);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(85, 13);
+            this.label16.Size = new System.Drawing.Size(92, 13);
             this.label16.TabIndex = 19;
             this.label16.Text = "ASCII translation";
             // 
@@ -881,7 +879,7 @@ namespace PcscDiag2
             this.label17.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label17.Location = new System.Drawing.Point(90, 30);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(94, 13);
+            this.label17.Size = new System.Drawing.Size(100, 13);
             this.label17.TabIndex = 18;
             this.label17.Text = "Hexadecimal entry";
             // 
@@ -898,8 +896,7 @@ namespace PcscDiag2
             // hexBoxRCtrl
             // 
             this.hexBoxRCtrl.BackColor = System.Drawing.SystemColors.Control;
-            this.hexBoxRCtrl.Font = new System.Drawing.Font("Consolas", 8.25F);
-            this.hexBoxRCtrl.LineInfoForeColor = System.Drawing.Color.Empty;
+            this.hexBoxRCtrl.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hexBoxRCtrl.LineInfoVisible = true;
             this.hexBoxRCtrl.Location = new System.Drawing.Point(6, 267);
             this.hexBoxRCtrl.Name = "hexBoxRCtrl";
@@ -913,8 +910,7 @@ namespace PcscDiag2
             // 
             // hexBoxCCtrl
             // 
-            this.hexBoxCCtrl.Font = new System.Drawing.Font("Consolas", 8.25F);
-            this.hexBoxCCtrl.LineInfoForeColor = System.Drawing.Color.Empty;
+            this.hexBoxCCtrl.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hexBoxCCtrl.LineInfoVisible = true;
             this.hexBoxCCtrl.Location = new System.Drawing.Point(6, 46);
             this.hexBoxCCtrl.Name = "hexBoxCCtrl";

@@ -79,8 +79,14 @@
     <Reference Include="Microsoft.CSharp">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="SpringCard.Bluetooth">
+      <HintPath>..\..\..\_libraries\net48\SpringCard.Bluetooth.dll</HintPath>
+    </Reference>
     <Reference Include="SpringCard.LibCs">
       <HintPath>..\..\..\_libraries\net48\SpringCard.LibCs.dll</HintPath>
+    </Reference>
+    <Reference Include="SpringCard.LibCs.Translations">
+      <HintPath>..\..\..\_libraries\net48\SpringCard.LibCs.Translations.dll</HintPath>
     </Reference>
     <Reference Include="SpringCard.LibCs.Windows">
       <HintPath>..\..\..\_libraries\net48\SpringCard.LibCs.Windows.dll</HintPath>
