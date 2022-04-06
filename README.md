@@ -2,27 +2,7 @@
 
 This is the SDK published by SpringCard to use PC/SC smart card readers from .NET applications.
 
-This SDK is available for free to all Springcard’s customers, and helps to use with SpringCard’s PC/SC products.
-
 Most of the sample applications provided in this SDK as source code as available as ready-to-use binaries in the SpringCard PC/SC QuickStart setup package (SQ1363): [www.springcard.com/download/find/file/sq13163](https://www.springcard.com/en/download/find/file/sq13163)
-
-## Legal disclaimer
-
-THE SDK IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
-
-## License
-
-This software is part of SPRINGCARD SDKs
-
-Redistribution and use in source (source code) and binary (object code) forms, with or without modification, are permitted provided that the following conditions are met :
-
-1. Redistributed source code or object code shall be used only in conjunction with products (hardware devices) either manufactured, distributed or developed by SPRINGCARD,
-2. Redistributed source code, either modified or un-modified, must retain the above copyright notice, this list of conditions and the disclaimer below,
-3. Redistribution of any modified code must be clearly identified "Code derived from original SPRINGCARD copyrighted source code", with a description of the modification and the name of its author,
-4. Redistributed object code must reproduce the above copyright notice, this list of conditions and the disclaimer below in the documentation and/or other materials provided with the distribution,
-5. The name of SPRINGCARD may not be used to endorse or promote products derived from this software or in any other form without specific prior written permission from SPRINGCARD.
-
-Please read to `LICENSE.TXT` for the complete license statement. Please always place a copy of the `LICENSE.TXT` file together with the redistributed source code or object code.
 
 ## Readme first!
 
@@ -196,6 +176,24 @@ CardPeek can read cards' data, and is extensible with a scripting language (LUA)
 pcsc-sharp is an alternative to `SpringCard.PCSC` library.
 
 See [github.com/danm-de/pcsc-sharp](https://github.com/danm-de/pcsc-sharp).
+
+## Legal disclaimer
+
+THE SDK IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+## License
+
+This software is part of SPRINGCARD SDKs
+
+Redistribution and use in source (source code) and binary (object code) forms, with or without modification, are permitted provided that the following conditions are met :
+
+1. Redistributed source code or object code shall be used only in conjunction with products (hardware devices) either manufactured, distributed or developed by SPRINGCARD,
+2. Redistributed source code, either modified or un-modified, must retain the above copyright notice, this list of conditions and the disclaimer below,
+3. Redistribution of any modified code must be clearly identified "Code derived from original SPRINGCARD copyrighted source code", with a description of the modification and the name of its author,
+4. Redistributed object code must reproduce the above copyright notice, this list of conditions and the disclaimer below in the documentation and/or other materials provided with the distribution,
+5. The name of SPRINGCARD may not be used to endorse or promote products derived from this software or in any other form without specific prior written permission from SPRINGCARD.
+
+Please read to `LICENSE.TXT` for the complete license statement. Please always place a copy of the `LICENSE.TXT` file together with the redistributed source code or object code.
 
 ## How to contact us
 
