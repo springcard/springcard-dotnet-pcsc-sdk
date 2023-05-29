@@ -313,7 +313,7 @@ namespace SmartTapRdr
         {
             if (rbVersion20.Checked) config.SmartTapVersion = 0x0000; else
             if (rbVersion21.Checked) config.SmartTapVersion = 0x0001; else
-            if (rbVersion21.Checked) config.SmartTapVersion = 0x0002;
+            if (rbVersion22.Checked) config.SmartTapVersion = 0x0002;
 
             ControlToConfig(config, this);
         }
@@ -398,9 +398,8 @@ namespace SmartTapRdr
                 {
                     ulong i = ulong.Parse(edecCollectorId.Text);
                     byte[] ab = BinUtils.FromQword(i);
+                    ab = BinUtils.EnsureSize(ab, 8, 8);
                     string s = BinConvert.ToHex(ab);
-                    if (s.StartsWith("00000000"))
-                        s = s.Substring(8);
                     ehexCollectorId.Text = s;
                 }
                 catch { }

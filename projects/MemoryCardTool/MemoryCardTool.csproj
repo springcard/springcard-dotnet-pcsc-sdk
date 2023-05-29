@@ -59,9 +59,6 @@
     <OutputPath>..\..\_output\MemoryCardTool\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SpringCard.Bluetooth">
-      <HintPath>..\..\_libraries\net48\SpringCard.Bluetooth.dll</HintPath>
-    </Reference>
     <Reference Include="SpringCard.LibCs, Version=19.8.7198.26873, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\_libraries\net48\SpringCard.LibCs.dll</HintPath>

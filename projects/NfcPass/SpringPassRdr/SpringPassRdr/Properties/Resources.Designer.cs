@@ -110,6 +110,16 @@ namespace SpringPassRdr.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logoWhite {
+            get {
+                object obj = ResourceManager.GetObject("logoWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pause_button {
             get {
                 object obj = ResourceManager.GetObject("pause-button", resourceCulture);

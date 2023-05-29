@@ -104,7 +104,7 @@ namespace SpringCardApplication
             this.toolStripMenuItem1,
             this.miQuit});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 19);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // miReaderChange
@@ -146,7 +146,7 @@ namespace SpringCardApplication
             this.toolStripMenuItem3,
             this.miWrite});
             this.controlToolStripMenuItem.Name = "controlToolStripMenuItem";
-            this.controlToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.controlToolStripMenuItem.Size = new System.Drawing.Size(59, 19);
             this.controlToolStripMenuItem.Text = "&Control";
             // 
             // miStart
@@ -154,7 +154,7 @@ namespace SpringCardApplication
             this.miStart.Image = ((System.Drawing.Image)(resources.GetObject("miStart.Image")));
             this.miStart.Name = "miStart";
             this.miStart.ShortcutKeys = System.Windows.Forms.Keys.F2;
-            this.miStart.Size = new System.Drawing.Size(282, 22);
+            this.miStart.Size = new System.Drawing.Size(281, 22);
             this.miStart.Text = "Start NFC Tag emulation";
             this.miStart.Click += new System.EventHandler(this.BtnStartClick);
             // 
@@ -163,14 +163,14 @@ namespace SpringCardApplication
             this.miStop.Image = ((System.Drawing.Image)(resources.GetObject("miStop.Image")));
             this.miStop.Name = "miStop";
             this.miStop.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F2)));
-            this.miStop.Size = new System.Drawing.Size(282, 22);
+            this.miStop.Size = new System.Drawing.Size(281, 22);
             this.miStop.Text = "Stop NFC Tag emulation";
             this.miStop.Click += new System.EventHandler(this.BtnStopClick);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(279, 6);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(278, 6);
             // 
             // miWrite
             // 
@@ -178,14 +178,14 @@ namespace SpringCardApplication
             this.miWrite.Name = "miWrite";
             this.miWrite.ShortcutKeyDisplayString = "";
             this.miWrite.ShortcutKeys = System.Windows.Forms.Keys.F6;
-            this.miWrite.Size = new System.Drawing.Size(282, 22);
+            this.miWrite.Size = new System.Drawing.Size(281, 22);
             this.miWrite.Text = "Write the NDEF to the emulated Tag";
             this.miWrite.Click += new System.EventHandler(this.BtnWriteClick);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 19);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItemClick);
             // 
@@ -221,7 +221,7 @@ namespace SpringCardApplication
             // 
             // pControl
             // 
-            this.pControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(217)))), ((int)(((byte)(213)))));
+            this.pControl.BackColor = System.Drawing.SystemColors.Control;
             this.pControl.Controls.Add(this.btnStart);
             this.pControl.Controls.Add(this.btnStop);
             this.pControl.Controls.Add(this.btnReaderChange);
@@ -341,7 +341,7 @@ namespace SpringCardApplication
             // 
             // pTitle
             // 
-            this.pTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(141)))), ((int)(((byte)(128)))));
+            this.pTitle.BackColor = System.Drawing.SystemColors.Control;
             this.pTitle.Controls.Add(this.label19);
             this.pTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pTitle.Location = new System.Drawing.Point(0, 84);
@@ -353,7 +353,7 @@ namespace SpringCardApplication
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label19.Location = new System.Drawing.Point(10, 7);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(153, 18);
@@ -362,7 +362,7 @@ namespace SpringCardApplication
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(141)))), ((int)(((byte)(128)))));
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 222);
@@ -374,7 +374,7 @@ namespace SpringCardApplication
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label1.Location = new System.Drawing.Point(10, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(341, 18);
@@ -383,7 +383,7 @@ namespace SpringCardApplication
             // 
             // imgHeader
             // 
-            this.imgHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(73)))), ((int)(((byte)(67)))));
+            this.imgHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
             this.imgHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.imgHeader.Location = new System.Drawing.Point(0, 24);
             this.imgHeader.Name = "imgHeader";
@@ -410,7 +410,7 @@ namespace SpringCardApplication
             // 
             // pNdefType
             // 
-            this.pNdefType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(217)))), ((int)(((byte)(213)))));
+            this.pNdefType.BackColor = System.Drawing.SystemColors.Control;
             this.pNdefType.Controls.Add(this.cbNdefType);
             this.pNdefType.Controls.Add(this.btnWrite);
             this.pNdefType.Controls.Add(this.label2);
@@ -464,12 +464,12 @@ namespace SpringCardApplication
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(73)))), ((int)(((byte)(67)))));
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(602, 32);
+            this.pictureBox1.Location = new System.Drawing.Point(592, 37);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(192, 52);
+            this.pictureBox1.Size = new System.Drawing.Size(190, 35);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 32;
             this.pictureBox1.TabStop = false;

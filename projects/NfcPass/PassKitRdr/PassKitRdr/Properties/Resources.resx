@@ -121,30 +121,6 @@
   <data name="checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\icons\checked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="refresh-page-arrow-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\refresh-page-arrow-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="springcard-logowhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\springcard-logowhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="springcard-r-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\springcard-r-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cross-remove-sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\cross-remove-sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="springcard-logoblack" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\springcard-logoblack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pause-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\pause-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="play-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\play-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Credits" xml:space="preserve">
-    <value>This application's icon is a derivated work of the 'Wallet' icon made by 'Pixel perfect' for www.flaticon.com, licensed by CC 3.0 BY.</value>
-  </data>
   <data name="Licence" xml:space="preserve">
     <value>Copyright (c) 2000 - 2018 SpringCard SAS, FRANCE
 Please visit http://www.springcard.com for contact and legal information.
@@ -184,9 +160,36 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. ALSO, SPRINGCARD IS UNDER NO
 OBLIGATION TO MAINTAIN, CORRECT, UPDATE, CHANGE, MODIFY, OR OTHERWISE SUPPORT
 THIS SOFTWARE.</value>
   </data>
+  <data name="refresh-page-arrow-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\refresh-page-arrow-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="springcard-logowhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\springcard-logowhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="springcard-r-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\springcard-r-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cross-remove-sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\cross-remove-sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="springcard-logoblack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\springcard-logoblack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Trademarks" xml:space="preserve">
     <value>This application uses Apple VAS protocol to communicate with an iOS device over NFC.
 Apple PassKit and the Apple VAS (Value Added Service) protocol are covered by a NDA.
 SpringCard is not endorsed by Apple and this version of the application has not been validated by Apple's NFC labs yet.</value>
+  </data>
+  <data name="pause-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\pause-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\play-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Credits" xml:space="preserve">
+    <value>This application's icon is a derivated work of the 'Wallet' icon made by 'Pixel perfect' for www.flaticon.com, licensed by CC 3.0 BY.</value>
+  </data>
+  <data name="logoWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

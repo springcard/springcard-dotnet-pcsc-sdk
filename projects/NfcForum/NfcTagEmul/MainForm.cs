@@ -199,7 +199,7 @@ namespace SpringCardApplication
             if (ShowSplash)
             {
                 Logger.Trace("Showing splash form");
-                SplashForm.DoShowDialog(this, FormStyle.ModernMarroon);
+                SplashForm.DoShowDialog(this, FormStyle.ModernRed);
             }
 
             if (AppConfig.ReadBoolean("reader_reconnect", false))
@@ -257,7 +257,7 @@ namespace SpringCardApplication
 		
 		void AboutToolStripMenuItemClick(object sender, EventArgs e)
 		{
-            AboutForm.DoShowDialog(this);
+            AboutForm.DoShowDialog(this, FormStyle.ModernRed);
 		}
 		
 		void MainFormFormClosed(object sender, FormClosedEventArgs e)
@@ -284,7 +284,7 @@ namespace SpringCardApplication
 			eReaderStatus.Text = "";
 			eCardAtr.Text = "";
 
-			ReaderSelectForm readerSelect = new ReaderSelectForm(imgHeader.BackColor);
+			ReaderSelectForm readerSelect = new ReaderSelectForm();
 			readerSelect.SelectedReader = eReaderName.Text;
 			readerSelect.ShowDialog();
 			if (readerSelect.SelectedReader != null)

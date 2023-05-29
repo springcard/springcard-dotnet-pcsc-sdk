@@ -728,10 +728,10 @@ namespace SpringCardApplication
             if (ShowSplash)
             {
                 Logger.Trace("Showing splash form");
-                SplashForm.DoShowDialog(this, FormStyle.ModernMarroon);
+                SplashForm.DoShowDialog(this, FormStyle.ModernRed);
             }
 
-            ReaderSelectForm readerSelect = new ReaderSelectForm(this.imgHeader.BackColor);
+            ReaderSelectForm readerSelect = new ReaderSelectForm();
 			
 			if (readerSelect.SelectedReader == null)
 			{
@@ -777,7 +777,7 @@ namespace SpringCardApplication
 		
 		void MiReaderClick(object sender, EventArgs e)
 		{
-			ReaderSelectForm readerSelect = new ReaderSelectForm(this.imgHeader.BackColor);
+			ReaderSelectForm readerSelect = new ReaderSelectForm();
 			readerSelect.SelectedReader = eReaderName.Text;
 			readerSelect.ShowDialog();
 

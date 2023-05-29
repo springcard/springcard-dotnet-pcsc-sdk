@@ -247,7 +247,7 @@ namespace SpringCardApplication
             // 
             // pLeft
             // 
-            this.pLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(141)))), ((int)(((byte)(128)))));
+            this.pLeft.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pLeft.Location = new System.Drawing.Point(0, 84);
             this.pLeft.Name = "pLeft";
@@ -256,7 +256,7 @@ namespace SpringCardApplication
             // 
             // pBottom
             // 
-            this.pBottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(73)))), ((int)(((byte)(67)))));
+            this.pBottom.BackColor = System.Drawing.SystemColors.Control;
             this.pBottom.Controls.Add(this.lbTagType);
             this.pBottom.Controls.Add(this.btnFormatDesfire);
             this.pBottom.Controls.Add(this.cbLock);
@@ -270,7 +270,7 @@ namespace SpringCardApplication
             // lbTagType
             // 
             this.lbTagType.AutoSize = true;
-            this.lbTagType.ForeColor = System.Drawing.Color.White;
+            this.lbTagType.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbTagType.Location = new System.Drawing.Point(22, 19);
             this.lbTagType.Name = "lbTagType";
             this.lbTagType.Size = new System.Drawing.Size(13, 13);
@@ -280,7 +280,7 @@ namespace SpringCardApplication
             // btnFormatDesfire
             // 
             this.btnFormatDesfire.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnFormatDesfire.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnFormatDesfire.BackColor = System.Drawing.SystemColors.Control;
             this.btnFormatDesfire.Enabled = false;
             this.btnFormatDesfire.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFormatDesfire.Image = ((System.Drawing.Image)(resources.GetObject("btnFormatDesfire.Image")));
@@ -297,7 +297,7 @@ namespace SpringCardApplication
             // 
             // cbLock
             // 
-            this.cbLock.ForeColor = System.Drawing.Color.White;
+            this.cbLock.ForeColor = System.Drawing.SystemColors.ControlText;
             this.cbLock.Location = new System.Drawing.Point(486, 14);
             this.cbLock.Name = "cbLock";
             this.cbLock.Size = new System.Drawing.Size(157, 24);
@@ -333,7 +333,7 @@ namespace SpringCardApplication
             // 
             // imgHeader
             // 
-            this.imgHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(73)))), ((int)(((byte)(67)))));
+            this.imgHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
             this.imgHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.imgHeader.Location = new System.Drawing.Point(0, 24);
             this.imgHeader.Name = "imgHeader";
@@ -345,12 +345,12 @@ namespace SpringCardApplication
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(73)))), ((int)(((byte)(67)))));
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(683, 32);
+            this.pictureBox1.Location = new System.Drawing.Point(672, 36);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(192, 52);
+            this.pictureBox1.Size = new System.Drawing.Size(190, 35);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;

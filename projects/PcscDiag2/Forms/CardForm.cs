@@ -124,6 +124,7 @@ namespace PcscDiag2
             btnReconnect.Enabled = connected && to_a_card;
             btnTransmit.Enabled = connected && to_a_card;
             btnControl.Enabled = connected;
+            btnBenchmark.Enabled = connected && to_a_card;
 
             btnCApduPrev.Enabled = hist_apdu_idx < settings.TransmitHistoryCount - 1;
             btnCApduNext.Enabled = hist_apdu_idx > 0;
@@ -167,7 +168,7 @@ namespace PcscDiag2
                 tabPages.SelectedIndex = 0;
                 hexBoxCApdu.Focus();
                 btnTransmit.Visible = true;
-
+                btnBenchmark.Visible = true;
             }
 
             if (!channel.Connect())
@@ -234,16 +235,11 @@ namespace PcscDiag2
      * SCardTransmit
      * ------------
      */
-        void BtnTransmitClick(object sender, EventArgs e)
+
+        CAPDU ReadCAPDU()
         {
-            RApduClear();
-
-            DynamicByteProvider p;
-            byte[] b;
-
-            p = (DynamicByteProvider)hexBoxCApdu.ByteProvider;
-
-            b = new byte[p.Length];
+            DynamicByteProvider p = (DynamicByteProvider)hexBoxCApdu.ByteProvider;
+            byte[] b = new byte[p.Length];
 
             for (int i = 0; i < p.Length; i++)
                 b[i] = p.ReadByte(i);
@@ -253,29 +249,39 @@ namespace PcscDiag2
             settings.TransmitHistoryAdd(capdu.AsString());
             hist_apdu_idx = -1;
 
+            return capdu;
+        }
+
+        void WriteRAPDU(RAPDU rapdu)
+        {
+            byte[] b = rapdu.GetBytes();
+            DynamicByteProvider p = new DynamicByteProvider(b);
+
+            hexBoxRApdu.ByteProvider = p;
+
+            eStatusWord.Text = String.Format("{0:X2} {1:X2}", rapdu.SW1, rapdu.SW2);
+            eStatusWordExplain.Text = SCARD.CardStatusWordsToString(rapdu.SW);
+
+            hexBoxRApdu.BackColor = hexBoxCApdu.BackColor;
+            eStatusWord.BackColor = eCardAtr.BackColor;
+            eStatusWordExplain.BackColor = eCardAtr.BackColor;
+        }
+
+        void BtnTransmitClick(object sender, EventArgs e)
+        {
+            RApduClear();
+
+            CAPDU capdu = ReadCAPDU();
             RAPDU rapdu = channel.Transmit(capdu);
 
             if (rapdu == null)
             {
                 ShowError();
-
             }
             else
             {
                 ShowSuccess();
-
-                b = rapdu.GetBytes();
-
-                p = new DynamicByteProvider(b);
-
-                hexBoxRApdu.ByteProvider = p;
-
-                eStatusWord.Text = String.Format("{0:X2} {1:X2}", rapdu.SW1, rapdu.SW2);
-                eStatusWordExplain.Text = SCARD.CardStatusWordsToString(rapdu.SW);
-
-                hexBoxRApdu.BackColor = hexBoxCApdu.BackColor;
-                eStatusWord.BackColor = eCardAtr.BackColor;
-                eStatusWordExplain.BackColor = eCardAtr.BackColor;
+                WriteRAPDU(rapdu);
             }
         }
 
@@ -574,9 +580,12 @@ namespace PcscDiag2
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BtnBenchmark_Click(object sender, EventArgs e)
         {
-            Dictionary<string, string> data = SpringCard.PCSC.CardAnalysis.GetAttrib.Analysis(channel);
+            RApduClear();
+            CAPDU capdu = ReadCAPDU();
+            Benchmark f = new Benchmark(channel, capdu);
+            f.ShowDialog(this);
         }
     }
 }

@@ -20,7 +20,9 @@ namespace PassKitRdr
         {
 			SystemConsole.ReadArgs(args);
 			Logger.ReadArgs(args);
-			if (!AppUtils.VerifyAssemblies())
+
+            Logger.Trace("Validating installation...");
+            if (!AppUtils.VerifyAssemblies())
 				return;
 
             Logger.Info("SpringCard.AppleVAS library version: {0}", Library.ModuleInfo.LongVersion);

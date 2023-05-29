@@ -52,13 +52,6 @@ If you're targetting a different plateform, see
 - See [github.com/springcard/android-pcsclike/](https://github.com/springcard/android-pcsclike/) for a PC/SC-Like implementation on Android (compatible with all Puck on an USB link, and Puck Blue on a Bluetooth link),
 - See [github.com/springcard/ios-pcsclike/](https://github.com/springcard/ios-pcsclike/) for a PC/SC-Like implementation on iOS (compatible with Puck Blue on a Bluetooth link).
 
-***Coming soon:*** 
-
-- Sample PC/SC applications in plain C,
-- Zero-driver PC/SC-Like code for embedded systems,
-- Desfire demo,
-- Mifare Plus demo.
-
 ## Available applications
 
 ### 'Beginner' Visual Basic sample
@@ -133,7 +126,7 @@ Some SpringCard PC/SC readers (Prox'N'Roll HSP, Puck and SpringPark) have been c
 - `SmartTapRdr`, a demo that reads Google Smart Tap NFC passes
 - `SpringPassRdr`, a demo that reads both kind of passes.
 
-The underlying libraries are <u>not</u> open source and are subject to a license fee. Therefore, the applications will stop working after 10 minutes unless a valid license string is provided.
+The underlying libraries are <u>not</u> open source and are subject to a license fee. Therefore, the libraries are available as binaries only. The applications will stop working after 10 minutes unless a valid license string is provided to activate the libraries.
 
 ## Building the applications
 

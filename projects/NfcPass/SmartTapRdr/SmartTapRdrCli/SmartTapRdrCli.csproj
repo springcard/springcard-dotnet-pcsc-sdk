@@ -33,8 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SpringCard.GoogleVas, Version=22.14.8130.30295, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="SpringCard.GoogleVas">
       <HintPath>..\..\..\..\_libraries\net48\SpringCard.GoogleVas.dll</HintPath>
     </Reference>
     <Reference Include="SpringCard.LibCs">
@@ -55,9 +54,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

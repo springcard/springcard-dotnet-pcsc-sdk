@@ -47,6 +47,10 @@
             this.cbAllowSkippingSmartTap2Select = new System.Windows.Forms.CheckBox();
             this.cbUseOSE = new System.Windows.Forms.CheckBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label18 = new System.Windows.Forms.Label();
+            this.edecCollectorId = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.numMerchantCategoryCode = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.estrMerchantName = new System.Windows.Forms.TextBox();
@@ -58,6 +62,7 @@
             this.ehexCollectorId = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.lbShowPublicKey = new System.Windows.Forms.LinkLabel();
             this.label16 = new System.Windows.Forms.Label();
             this.numLongTermPrivateKeyIndex = new System.Windows.Forms.NumericUpDown();
             this.cbUseSecureElement = new System.Windows.Forms.CheckBox();
@@ -71,13 +76,14 @@
             this.label11 = new System.Windows.Forms.Label();
             this.cbUseEncryption = new System.Windows.Forms.CheckBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.cbRequestTransit = new System.Windows.Forms.CheckBox();
             this.cbRequestPrivateLabelCards = new System.Windows.Forms.CheckBox();
             this.cbRequestOffers = new System.Windows.Forms.CheckBox();
             this.cbRequestLoyaltyPrograms = new System.Windows.Forms.CheckBox();
             this.cbRequestGiftCards = new System.Windows.Forms.CheckBox();
             this.cbRequestFlights = new System.Windows.Forms.CheckBox();
             this.cbRequestEventTickets = new System.Windows.Forms.CheckBox();
-            this.cbRequestCustomerInfo = new System.Windows.Forms.CheckBox();
+            this.cbRequestWalletCustomer = new System.Windows.Forms.CheckBox();
             this.cbRequestAllValuablesExceptPpse = new System.Windows.Forms.CheckBox();
             this.cbRequestAllValuables = new System.Windows.Forms.CheckBox();
             this.cbDoRequest = new System.Windows.Forms.CheckBox();
@@ -120,11 +126,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cbCapabilitiesStandalone = new System.Windows.Forms.CheckBox();
             this.dlgOpenFile = new System.Windows.Forms.OpenFileDialog();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.edecCollectorId = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.lbShowPublicKey = new System.Windows.Forms.LinkLabel();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -388,6 +389,44 @@
             this.tabPage2.Text = "Merchant";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label18.Location = new System.Drawing.Point(380, 17);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(45, 20);
+            this.label18.TabIndex = 13;
+            this.label18.Text = "(Dec)";
+            // 
+            // edecCollectorId
+            // 
+            this.edecCollectorId.Font = new System.Drawing.Font("Consolas", 12F);
+            this.edecCollectorId.Location = new System.Drawing.Point(234, 40);
+            this.edecCollectorId.Name = "edecCollectorId";
+            this.edecCollectorId.Size = new System.Drawing.Size(191, 26);
+            this.edecCollectorId.TabIndex = 12;
+            this.edecCollectorId.TextChanged += new System.EventHandler(this.edecCollectorId_TextChanged);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(231, 17);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(88, 20);
+            this.label19.TabIndex = 11;
+            this.label19.Text = "Collector ID";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label17.Location = new System.Drawing.Point(157, 17);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(45, 20);
+            this.label17.TabIndex = 10;
+            this.label17.Text = "(Hex)";
+            // 
             // numMerchantCategoryCode
             // 
             this.numMerchantCategoryCode.Location = new System.Drawing.Point(234, 152);
@@ -494,6 +533,20 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Cryptography and security";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // lbShowPublicKey
+            // 
+            this.lbShowPublicKey.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
+            this.lbShowPublicKey.AutoSize = true;
+            this.lbShowPublicKey.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
+            this.lbShowPublicKey.Location = new System.Drawing.Point(484, 41);
+            this.lbShowPublicKey.Name = "lbShowPublicKey";
+            this.lbShowPublicKey.Size = new System.Drawing.Size(116, 20);
+            this.lbShowPublicKey.TabIndex = 15;
+            this.lbShowPublicKey.TabStop = true;
+            this.lbShowPublicKey.Text = "Show public key";
+            this.lbShowPublicKey.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
+            this.lbShowPublicKey.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbShowPublicKey_LinkClicked);
             // 
             // label16
             // 
@@ -605,13 +658,14 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.cbRequestTransit);
             this.tabPage4.Controls.Add(this.cbRequestPrivateLabelCards);
             this.tabPage4.Controls.Add(this.cbRequestOffers);
             this.tabPage4.Controls.Add(this.cbRequestLoyaltyPrograms);
             this.tabPage4.Controls.Add(this.cbRequestGiftCards);
             this.tabPage4.Controls.Add(this.cbRequestFlights);
             this.tabPage4.Controls.Add(this.cbRequestEventTickets);
-            this.tabPage4.Controls.Add(this.cbRequestCustomerInfo);
+            this.tabPage4.Controls.Add(this.cbRequestWalletCustomer);
             this.tabPage4.Controls.Add(this.cbRequestAllValuablesExceptPpse);
             this.tabPage4.Controls.Add(this.cbRequestAllValuables);
             this.tabPage4.Controls.Add(this.cbDoRequest);
@@ -622,6 +676,17 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Requested data";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // cbRequestTransit
+            // 
+            this.cbRequestTransit.AutoSize = true;
+            this.cbRequestTransit.Location = new System.Drawing.Point(260, 184);
+            this.cbRequestTransit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbRequestTransit.Name = "cbRequestTransit";
+            this.cbRequestTransit.Size = new System.Drawing.Size(71, 24);
+            this.cbRequestTransit.TabIndex = 11;
+            this.cbRequestTransit.Text = "Transit";
+            this.cbRequestTransit.UseVisualStyleBackColor = true;
             // 
             // cbRequestPrivateLabelCards
             // 
@@ -689,16 +754,16 @@
             this.cbRequestEventTickets.Text = "Event tickets";
             this.cbRequestEventTickets.UseVisualStyleBackColor = true;
             // 
-            // cbRequestCustomerInfo
+            // cbRequestWalletCustomer
             // 
-            this.cbRequestCustomerInfo.AutoSize = true;
-            this.cbRequestCustomerInfo.Location = new System.Drawing.Point(13, 124);
-            this.cbRequestCustomerInfo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cbRequestCustomerInfo.Name = "cbRequestCustomerInfo";
-            this.cbRequestCustomerInfo.Size = new System.Drawing.Size(173, 24);
-            this.cbRequestCustomerInfo.TabIndex = 4;
-            this.cbRequestCustomerInfo.Text = "Customer information";
-            this.cbRequestCustomerInfo.UseVisualStyleBackColor = true;
+            this.cbRequestWalletCustomer.AutoSize = true;
+            this.cbRequestWalletCustomer.Location = new System.Drawing.Point(13, 124);
+            this.cbRequestWalletCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbRequestWalletCustomer.Name = "cbRequestWalletCustomer";
+            this.cbRequestWalletCustomer.Size = new System.Drawing.Size(135, 24);
+            this.cbRequestWalletCustomer.TabIndex = 4;
+            this.cbRequestWalletCustomer.Text = "Wallet customer";
+            this.cbRequestWalletCustomer.UseVisualStyleBackColor = true;
             // 
             // cbRequestAllValuablesExceptPpse
             // 
@@ -1193,59 +1258,6 @@
             this.dlgOpenFile.DefaultExt = "json";
             this.dlgOpenFile.Filter = "JSON files|*.json|All files|*.*";
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label17.Location = new System.Drawing.Point(157, 17);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(45, 20);
-            this.label17.TabIndex = 10;
-            this.label17.Text = "(Hex)";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label18.Location = new System.Drawing.Point(380, 17);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(45, 20);
-            this.label18.TabIndex = 13;
-            this.label18.Text = "(Dec)";
-            // 
-            // edecCollectorId
-            // 
-            this.edecCollectorId.Font = new System.Drawing.Font("Consolas", 12F);
-            this.edecCollectorId.Location = new System.Drawing.Point(234, 40);
-            this.edecCollectorId.Name = "edecCollectorId";
-            this.edecCollectorId.ReadOnly = true;
-            this.edecCollectorId.Size = new System.Drawing.Size(191, 26);
-            this.edecCollectorId.TabIndex = 12;
-            this.edecCollectorId.TextChanged += new System.EventHandler(this.edecCollectorId_TextChanged);
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(231, 17);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(88, 20);
-            this.label19.TabIndex = 11;
-            this.label19.Text = "Collector ID";
-            // 
-            // lbShowPublicKey
-            // 
-            this.lbShowPublicKey.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
-            this.lbShowPublicKey.AutoSize = true;
-            this.lbShowPublicKey.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
-            this.lbShowPublicKey.Location = new System.Drawing.Point(484, 41);
-            this.lbShowPublicKey.Name = "lbShowPublicKey";
-            this.lbShowPublicKey.Size = new System.Drawing.Size(116, 20);
-            this.lbShowPublicKey.TabIndex = 15;
-            this.lbShowPublicKey.TabStop = true;
-            this.lbShowPublicKey.Text = "Show public key";
-            this.lbShowPublicKey.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
-            this.lbShowPublicKey.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbShowPublicKey_LinkClicked);
-            // 
             // GoogleVASConfigForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -1342,7 +1354,7 @@
         private System.Windows.Forms.CheckBox cbRequestGiftCards;
         private System.Windows.Forms.CheckBox cbRequestFlights;
         private System.Windows.Forms.CheckBox cbRequestEventTickets;
-        private System.Windows.Forms.CheckBox cbRequestCustomerInfo;
+        private System.Windows.Forms.CheckBox cbRequestWalletCustomer;
         private System.Windows.Forms.CheckBox cbRequestAllValuablesExceptPpse;
         private System.Windows.Forms.CheckBox cbRequestAllValuables;
         private System.Windows.Forms.CheckBox cbDoRequest;
@@ -1383,5 +1395,6 @@
         private System.Windows.Forms.TextBox edecCollectorId;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.LinkLabel lbShowPublicKey;
+        private System.Windows.Forms.CheckBox cbRequestTransit;
     }
 }

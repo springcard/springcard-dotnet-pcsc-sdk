@@ -36,12 +36,10 @@
     <ApplicationIcon>smarttaprdr.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="BouncyCastle.Crypto">
       <HintPath>..\..\..\..\_libraries\net48\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
-    <Reference Include="SpringCard.GoogleVas, Version=22.14.8130.30295, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="SpringCard.GoogleVas">
       <HintPath>..\..\..\..\_libraries\net48\SpringCard.GoogleVas.dll</HintPath>
     </Reference>
     <Reference Include="SpringCard.LibCs">
@@ -50,21 +48,20 @@
     <Reference Include="SpringCard.LibCs.Translations">
       <HintPath>..\..\..\..\_libraries\net48\SpringCard.LibCs.Translations.dll</HintPath>
     </Reference>
-    <Reference Include="SpringCard.LibCs.Windows, Version=22.9.8096.20237, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="SpringCard.LibCs.Windows">
       <HintPath>..\..\..\..\_libraries\net48\SpringCard.LibCs.Windows.dll</HintPath>
     </Reference>
     <Reference Include="SpringCard.LibCs.Windows.Forms">
       <HintPath>..\..\..\..\_libraries\net48\SpringCard.LibCs.Windows.Forms.dll</HintPath>
     </Reference>
     <Reference Include="SpringCard.Licenses">
-      <HintPath>..\..\..\..\..\_libraries\net48\SpringCard.Licenses.dll</HintPath>
+      <HintPath>..\..\..\..\_libraries\net48\SpringCard.Licenses.dll</HintPath>
     </Reference>
     <Reference Include="SpringCard.Licenses.Forms">
       <HintPath>..\..\..\..\_libraries\net48\SpringCard.Licenses.Forms.dll</HintPath>
     </Reference>
     <Reference Include="SpringCard.PCSC">
-      <HintPath>..\..\..\..\..\_libraries\net48\SpringCard.PCSC.dll</HintPath>
+      <HintPath>..\..\..\..\_libraries\net48\SpringCard.PCSC.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -116,6 +113,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -128,9 +126,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="Resources\logoWhite.png" />
     <Content Include="smarttaprdr.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

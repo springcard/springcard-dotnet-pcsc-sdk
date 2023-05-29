@@ -307,7 +307,7 @@ namespace SpringCardApplication
             if (ShowSplash)
             {
                 Logger.Trace("Showing splash form");
-                SplashForm.DoShowDialog(this, FormStyle.ModernMarroon);
+                SplashForm.DoShowDialog(this, FormStyle.ModernRed);
             }
 
             Logger.Trace("Loading settings from registry");
@@ -354,7 +354,7 @@ namespace SpringCardApplication
             else
                 cbNdefType.SelectedIndex = 0;
 
-            ReaderSelectForm readerSelect = new ReaderSelectForm(this.imgHeader.BackColor);
+            ReaderSelectForm readerSelect = new ReaderSelectForm();
 
             if (readerSelect.SelectedReader == null)
             {
@@ -424,7 +424,7 @@ namespace SpringCardApplication
             eReaderStatus.Text = "";
             eCardAtr.Text = "";
 
-            ReaderSelectForm readerSelect = new ReaderSelectForm(imgHeader.BackColor);
+            ReaderSelectForm readerSelect = new ReaderSelectForm();
             readerSelect.SelectedReader = eReaderName.Text;
             readerSelect.ShowDialog();
             if (readerSelect.SelectedReader != null)

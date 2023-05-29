@@ -20,6 +20,8 @@ namespace SmartTapRdr
         {
             SystemConsole.ReadArgs(args);
             Logger.ReadArgs(args);
+
+            Logger.Trace("Validating installation...");
 			if (!AppUtils.VerifyAssemblies())
 				return;
 

@@ -80,6 +80,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\BenchmarkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BenchmarkForm.Designer.cs">
+      <DependentUpon>BenchmarkForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\BookmarkForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,9 +149,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Settings.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\BenchmarkForm.resx">
+      <DependentUpon>BenchmarkForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ConnectForm.resx">
       <DependentUpon>ConnectForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,8 +187,13 @@
     <EmbeddedResource Include="Forms\ReconnectForm.resx">
       <DependentUpon>ReconnectForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="images\benchmark.png" />
     <Content Include="smartcard.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -183,7 +202,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /E /Y $(ProjectDir)data\* $(TargetDir)
-%DGIT_DRIVE%\Builder\Dgit\dgit-maybe-xcopy.cmd $(TargetDir) I:\projects\binaries\softs\pcscdiag2\</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>

@@ -1,4 +1,4 @@
-﻿#region Using directives
+#region Using directives
 using System;
 using System.Reflection;
 using System.Runtime.InteropServices;
@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SpringCard")]
 [assembly: AssemblyProduct("PC/SC Scriptor")]
-[assembly: AssemblyCopyright("© SpringCard SAS, France, 2014-2022")]
+[assembly: AssemblyCopyright("© SpringCard SAS, France, 2014-2023")]
 [assembly: AssemblyTrademark("This program is an unsupported freeware.")]
 [assembly: AssemblyCulture("")]
 // This sets the default COM visibility of types in the assembly to invisible.
@@ -23,4 +23,4 @@ using System.Runtime.InteropServices;
 //
 // You can specify all the values or you can use the default the Revision and
 // Build Numbers by using the '*' as shown below:
-[assembly: AssemblyVersion("22.14.*")]
+[assembly: AssemblyVersion("22.23.*")]

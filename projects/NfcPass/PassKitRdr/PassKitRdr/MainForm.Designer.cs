@@ -41,7 +41,6 @@
             this.lkAbout = new System.Windows.Forms.LinkLabel();
             this.lkSubscribe = new System.Windows.Forms.LinkLabel();
             this.lkRefresh = new System.Windows.Forms.LinkLabel();
-            this.imgCross = new System.Windows.Forms.PictureBox();
             this.imgCheck = new System.Windows.Forms.PictureBox();
             this.ePassTimestamp = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,13 +50,14 @@
             this.btnPlay = new System.Windows.Forms.Button();
             this.cbReaders = new System.Windows.Forms.ComboBox();
             this.lbReader = new System.Windows.Forms.Label();
+            this.imgCross = new System.Windows.Forms.PictureBox();
             this.timerAutoClear = new System.Windows.Forms.Timer(this.components);
             this.pTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgCross)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCheck)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCross)).BeginInit();
             this.SuspendLayout();
             // 
             // pTop
@@ -84,7 +84,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackgroundImage = global::PassKitRdr.Properties.Resources.springcard_r_white;
+            this.pictureBox2.BackgroundImage = global::PassKitRdr.Properties.Resources.logoWhite;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(16, 24);
             this.pictureBox2.Name = "pictureBox2";
@@ -208,18 +208,6 @@
             this.lkRefresh.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
             this.lkRefresh.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkRefresh_LinkClicked);
             // 
-            // imgCross
-            // 
-            this.imgCross.BackgroundImage = global::PassKitRdr.Properties.Resources.cross_remove_sign;
-            this.imgCross.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imgCross.Location = new System.Drawing.Point(210, 193);
-            this.imgCross.Name = "imgCross";
-            this.imgCross.Size = new System.Drawing.Size(24, 24);
-            this.imgCross.TabIndex = 17;
-            this.imgCross.TabStop = false;
-            this.imgCross.Visible = false;
-            this.imgCross.Click += new System.EventHandler(this.imgCross_Click);
-            // 
             // imgCheck
             // 
             this.imgCheck.BackgroundImage = global::PassKitRdr.Properties.Resources._checked;
@@ -312,6 +300,18 @@
             this.lbReader.TabIndex = 5;
             this.lbReader.Text = "PC/SC Reader:";
             // 
+            // imgCross
+            // 
+            this.imgCross.BackgroundImage = global::PassKitRdr.Properties.Resources.cross_remove_sign;
+            this.imgCross.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imgCross.Location = new System.Drawing.Point(210, 193);
+            this.imgCross.Name = "imgCross";
+            this.imgCross.Size = new System.Drawing.Size(24, 24);
+            this.imgCross.TabIndex = 17;
+            this.imgCross.TabStop = false;
+            this.imgCross.Visible = false;
+            this.imgCross.Click += new System.EventHandler(this.imgCross_Click);
+            // 
             // timerAutoClear
             // 
             this.timerAutoClear.Tick += new System.EventHandler(this.timerAutoClear_Tick);
@@ -342,8 +342,8 @@
             this.statusStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgCross)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCheck)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCross)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -45,3 +45,18 @@ Please read LICENSE.TXT for details.
 #### v19.9 17/09/2019
 
 Rebuild with latest libraries. Now targetting .NET Framework v4.6.2 (previously: v4.0).
+
+
+## Misc.
+
+Benchmark with NXP SAM
+
+`8060000000`
+
+| 10000 runs               | Reference device | Puck One 2022 | Puck One 2023 |
+| ------------------------ | ---------------- | ------------- | ------------- |
+| Time                     | 58.614s          |               |               |
+| Transactions/second      | 170              |               |               |
+| PC to card, bytes/second | 853              |               |               |
+| Card ot PC, bytes/second | 5360             |               |               |
+

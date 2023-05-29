@@ -78,7 +78,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackgroundImage = global::SpringPassRdr.Properties.Resources.springcard_r_white;
+            this.pictureBox2.BackgroundImage = global::SpringPassRdr.Properties.Resources.logoWhite;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(16, 24);
             this.pictureBox2.Name = "pictureBox2";

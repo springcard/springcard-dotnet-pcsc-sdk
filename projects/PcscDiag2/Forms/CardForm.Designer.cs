@@ -45,6 +45,7 @@ namespace PcscDiag2
             this.eCardAtr = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.pRight = new System.Windows.Forms.Panel();
+            this.btnBenchmark = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnDisconnect = new System.Windows.Forms.Button();
             this.btnReconnect = new System.Windows.Forms.Button();
@@ -193,6 +194,7 @@ namespace PcscDiag2
             this.pRight.Controls.Add(this.btnDisconnect);
             this.pRight.Controls.Add(this.btnReconnect);
             this.pRight.Controls.Add(this.btnConnect);
+            this.pRight.Controls.Add(this.btnBenchmark);
             this.pRight.Controls.Add(this.btnControl);
             this.pRight.Controls.Add(this.btnTransmit);
             this.pRight.Dock = System.Windows.Forms.DockStyle.Right;
@@ -202,6 +204,24 @@ namespace PcscDiag2
             this.pRight.Padding = new System.Windows.Forms.Padding(3, 28, 3, 6);
             this.pRight.Size = new System.Drawing.Size(120, 532);
             this.pRight.TabIndex = 2;
+            // 
+            // btnBenchmark
+            // 
+            this.btnBenchmark.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBenchmark.Enabled = false;
+            this.btnBenchmark.FlatAppearance.BorderSize = 0;
+            this.btnBenchmark.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBenchmark.Image = ((System.Drawing.Image)(resources.GetObject("btnBenchmark.Image")));
+            this.btnBenchmark.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnBenchmark.Location = new System.Drawing.Point(3, 126);
+            this.btnBenchmark.Name = "btnBenchmark";
+            this.btnBenchmark.Size = new System.Drawing.Size(114, 49);
+            this.btnBenchmark.TabIndex = 16;
+            this.btnBenchmark.Text = "Benchmark";
+            this.btnBenchmark.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBenchmark.UseVisualStyleBackColor = true;
+            this.btnBenchmark.Visible = false;
+            this.btnBenchmark.Click += new System.EventHandler(this.BtnBenchmark_Click);
             // 
             // btnClose
             // 
@@ -227,7 +247,7 @@ namespace PcscDiag2
             this.btnDisconnect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDisconnect.Image = ((System.Drawing.Image)(resources.GetObject("btnDisconnect.Image")));
             this.btnDisconnect.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnDisconnect.Location = new System.Drawing.Point(3, 224);
+            this.btnDisconnect.Location = new System.Drawing.Point(3, 273);
             this.btnDisconnect.Name = "btnDisconnect";
             this.btnDisconnect.Size = new System.Drawing.Size(114, 49);
             this.btnDisconnect.TabIndex = 12;
@@ -244,7 +264,7 @@ namespace PcscDiag2
             this.btnReconnect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReconnect.Image = ((System.Drawing.Image)(resources.GetObject("btnReconnect.Image")));
             this.btnReconnect.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnReconnect.Location = new System.Drawing.Point(3, 175);
+            this.btnReconnect.Location = new System.Drawing.Point(3, 224);
             this.btnReconnect.Name = "btnReconnect";
             this.btnReconnect.Size = new System.Drawing.Size(114, 49);
             this.btnReconnect.TabIndex = 13;
@@ -261,7 +281,7 @@ namespace PcscDiag2
             this.btnConnect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConnect.Image = ((System.Drawing.Image)(resources.GetObject("btnConnect.Image")));
             this.btnConnect.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnConnect.Location = new System.Drawing.Point(3, 126);
+            this.btnConnect.Location = new System.Drawing.Point(3, 175);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(114, 49);
             this.btnConnect.TabIndex = 14;
@@ -1014,5 +1034,6 @@ namespace PcscDiag2
     private System.Windows.Forms.Panel pMain;
     private System.Windows.Forms.Panel pRight;
     private System.Windows.Forms.Panel pTop;
+        private System.Windows.Forms.Button btnBenchmark;
     }
 }

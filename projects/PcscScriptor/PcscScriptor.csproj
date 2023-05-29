@@ -82,6 +82,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\_libraries\net48\SpringCard.PCSC.ZeroDriver.dll</HintPath>
     </Reference>
+    <Reference Include="SpringCard.PCSC.ZeroDriver.Forms, Version=23.22.8544.26278, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\_libraries\net48\SpringCard.PCSC.ZeroDriver.Forms.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>

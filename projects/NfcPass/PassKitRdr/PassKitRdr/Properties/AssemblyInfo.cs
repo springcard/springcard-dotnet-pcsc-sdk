@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 // Les informations générales relatives à un assembly dépendent de
@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SpringCard")]
 [assembly: AssemblyProduct("PassKitRdr")]
-[assembly: AssemblyCopyright("©  SpringCard SAS, France, 2018-2022")]
+[assembly: AssemblyCopyright("©  SpringCard SAS, France, 2018-2023")]
 [assembly: AssemblyTrademark("This program is an unsupported freeware. This program is not endorsed by Apple.")]
 [assembly: AssemblyCulture("")]
 // L'affectation de la valeur false à ComVisible rend les types invisibles dans cet assembly
@@ -27,5 +27,5 @@ using System.Runtime.InteropServices;
 //
 // Vous pouvez spécifier toutes les valeurs ou indiquer les numéros de build et de révision par défaut
 // en utilisant '*', comme indiqué ci-dessous :
-// [assembly: AssemblyVersion("22.14.*")]
-[assembly: AssemblyVersion("22.14.*")]
+// [assembly: AssemblyVersion("22.23.*")]
+[assembly: AssemblyVersion("22.23.*")]

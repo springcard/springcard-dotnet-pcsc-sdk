@@ -19,7 +19,7 @@ namespace SmartTapRdr.Properties {
     // à l'aide d'un outil, tel que ResGen ou Visual Studio.
     // Pour ajouter ou supprimer un membre, modifiez votre fichier .ResX, puis réexécutez ResGen
     // avec l'option /str ou régénérez votre projet VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -99,11 +99,21 @@ namespace SmartTapRdr.Properties {
         ///1. Redistributed source code or object code must be used only with the
         ///   related SpringCard hardware product,
         ///2. Redistributed source code must retain the above copyright notice, this
-        ///   list of conditions and the d [le reste de la chaîne a été tronqué]&quot;;.
+        ///   list of conditions  [le reste de la chaîne a été tronqué]&quot;;.
         /// </summary>
         internal static string Licence {
             get {
                 return ResourceManager.GetString("Licence", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logoWhite {
+            get {
+                object obj = ResourceManager.GetObject("logoWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

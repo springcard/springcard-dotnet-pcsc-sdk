@@ -51,9 +51,6 @@
     <OutputPath>..\..\..\_output\NfcForum\NfcTagEmul\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SpringCard.Bluetooth">
-      <HintPath>..\..\..\_libraries\net48\SpringCard.Bluetooth.dll</HintPath>
-    </Reference>
     <Reference Include="SpringCard.LibCs">
       <HintPath>..\..\..\_libraries\net48\SpringCard.LibCs.dll</HintPath>
     </Reference>
@@ -161,6 +158,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Settings.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -194,6 +196,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

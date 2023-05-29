@@ -70,9 +70,9 @@ namespace PassKitRdr
         {
             Logger.Debug("Loading terminal configuration");
 
-            string merchantName1 = AppConfig.ReadSettingString("MerchantName");
+            string merchantName1 = AppConfig.ReadSettingString("MerchantName", TestMerchantName);
             string merchantId1 = AppConfig.ReadSettingString("MerchantId");
-            string privateKey1 = AppConfig.ReadSettingString("PrivateKey");
+            string privateKey1 = AppConfig.ReadSettingString("PrivateKey", TestKeyPrivate);
 
             string merchantName2 = AppConfig.ReadSettingString("MerchantName2");
             string merchantId2 = AppConfig.ReadSettingString("MerchantId2");
