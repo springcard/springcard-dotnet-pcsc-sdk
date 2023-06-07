@@ -230,7 +230,7 @@ namespace SmartTapRdr
 
 		private void lkSubscribe_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 		{
-			System.Diagnostics.Process.Start("https://springpass.springcard.com");
+			System.Diagnostics.Process.Start("https://playground.springpass.prod.springcard.com/");
 		}
 
 		private void lkAbout_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -275,7 +275,7 @@ namespace SmartTapRdr
                 if (licenseData.HasTimeLimit)
                 {
                     string title = licenseData.IsEvaluation ? "Evaluation license" : "Restricted license";
-                    MessageBox.Show(this, string.Format("This software will stop running after {0} minutes.", licenseData.TimeLimit), title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(this, string.Format("SpringCard Library for Google VAS is running with a time-restricted license.\nThe Library will stop reading passes after {0} minutes.", licenseData.TimeLimit), title, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }

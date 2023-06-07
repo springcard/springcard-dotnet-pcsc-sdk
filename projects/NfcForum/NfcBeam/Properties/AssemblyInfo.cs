@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration ("")]
 [assembly: AssemblyCompany ("SpringCard")]
 [assembly: AssemblyProduct ("NfcBeam")]
-[assembly: AssemblyCopyright ("© SpringCard SAS, France, 2000-2023")]
+[assembly: AssemblyCopyright("Copyright © SpringCard 2000-2023")]
 [assembly: AssemblyTrademark ("This program is an unsupported sample software from SpringCard's SDK. You may use it freely, but only together with a genuine SpringCard device. Please read the associated LICENSE.txt file for further information.")]
 [assembly: AssemblyCulture ("")]
 // This sets the default COM visibility of types in the assembly to invisible.
@@ -23,4 +23,4 @@ using System.Runtime.InteropServices;
 //
 // You can specify all the values or you can use the default the Revision and
 // Build Numbers by using the '*' as shown below:
-[assembly: AssemblyVersion ("22.23.*")]
+[assembly: AssemblyVersion ("23.24.*")]

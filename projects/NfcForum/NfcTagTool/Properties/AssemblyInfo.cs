@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration ("")]
 [assembly: AssemblyCompany ("SpringCard")]
 [assembly: AssemblyProduct ("NFC Tag Tool")]
-[assembly: AssemblyCopyright("© SpringCard SAS, France, 2000-2023")]
+[assembly: AssemblyCopyright("Copyright © SpringCard 2000-2023")]
 [assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
 // L'affectation de la valeur false à ComVisible rend les types invisibles dans cet assembly
@@ -26,5 +26,5 @@ using System.Runtime.InteropServices;
 //      Numéro de build
 //      Révision
 //
-[assembly: AssemblyVersion("22.23.*")]
+[assembly: AssemblyVersion("23.24.*")]
 //[assembly: AssemblyFileVersion("1.0.*")]

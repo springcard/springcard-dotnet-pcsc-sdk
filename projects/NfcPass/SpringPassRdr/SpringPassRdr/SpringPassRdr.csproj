@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>springpass.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto">
       <HintPath>..\..\..\..\_libraries\net48\BouncyCastle.Crypto.dll</HintPath>
@@ -148,6 +151,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logoWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="springpass.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

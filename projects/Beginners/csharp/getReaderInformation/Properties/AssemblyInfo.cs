@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SpringCard")]
 [assembly: AssemblyProduct("getReaderInformation")]
-[assembly: AssemblyCopyright("Copyright ©  2015-2022 - SpringCard")]
+[assembly: AssemblyCopyright("Copyright © SpringCard 2015-2023")]
 [assembly: AssemblyTrademark("SpringCard")]
 [assembly: AssemblyCulture("")]
 // Setting ComVisible to false makes the types in this assembly not visible
@@ -27,6 +27,6 @@ using System.Runtime.InteropServices;
 //
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
-// [assembly: AssemblyVersion("22.23.*")]
-[assembly: AssemblyVersion("22.23.*")]
+// [assembly: AssemblyVersion("23.24.*")]
+[assembly: AssemblyVersion("23.24.*")]
 [assembly: AssemblyFileVersion("1.0.0.0")]

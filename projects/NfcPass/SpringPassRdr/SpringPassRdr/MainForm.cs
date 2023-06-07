@@ -180,7 +180,7 @@ namespace SpringPassRdr
 
         void CardRemovedCallback()
         {
-            ShowResult("Waiting for NFC mobile...", null, false);
+            ShowResult(null, null, false);
         }
 
         void CardConnectedCallback(SCardChannel cardChannel)
@@ -213,9 +213,28 @@ namespace SpringPassRdr
                 appleTerminal.AddConfig(merchConfig);
             }
 
-            if (appleTerminal.DoTransaction(cardChannel, out AppleVasData data2, out AppleVasError error2, out RAPDU selectOseResponseApple))
+            if (appleTerminal.DoTransaction(cardChannel, out AppleVasData dataApple, out AppleVasError errorApple, out RAPDU selectOseResponseApple))
             {
-                ShowResult(null, data2.Text, true);
+                string value = null;
+
+                if (dataApple != null)
+                {
+                    Logger.Debug("AppleVasData: {0}", dataApple.ToString());
+                    value = dataApple.Text;
+                }
+
+                if (value != null)
+                {
+                    ShowResult("Apple VAS message", value, true);
+                }
+                else if (errorApple != AppleVasError.Success)
+                {
+                    ShowResult(string.Format("Read Apple VAS error {0}", errorApple), null, true);
+                }
+                else
+                {
+                    ShowResult("Read Apple VAS OK, but SpringPass data is empty", null, true);
+                }
                 return;
             }
 
@@ -246,26 +265,43 @@ namespace SpringPassRdr
             GoogleVasTerminal googleTerminal = new GoogleVasTerminal(googleConfig);
 
             /* Provide selectOseResponseApple to speed up the transaction */
-            if (googleTerminal.DoTransaction(cardChannel, out GoogleVasData data1, out GoogleVasError error1, selectOseResponseApple))
+            if (googleTerminal.DoTransaction(cardChannel, out GoogleVasData dataGoogle, out GoogleVasError errorGoogle)) // , selectOseResponseApple))
             {
-                /* Convert JSON to SpringPass data with regex */
-                Regex rx = new Regex(@"[0-9a-zA-Z]+\|[a-z0-9.-_]+@[a-z.]+", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+                string value = null;
 
-                MatchCollection matches = rx.Matches(data1.GetJsonString());
-
-                if(matches.Count >= 1)
+                if (dataGoogle != null)
                 {
-                    ShowResult("Message is OK", matches[0].Value, true); 
+                    Logger.Debug("GoogleVasData: {0}", dataGoogle.ToString());
+                    try
+                    {
+                        /* Convert JSON to SpringPass data with regex */
+                        Regex rx = new Regex(@"[0-9a-zA-Z]+\|[a-z0-9.-_]+@[a-z.]+", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+                        string json = dataGoogle.GetJsonString();
+                        Logger.Debug("GoogleVasData: {0}", json);
+                        MatchCollection matches = rx.Matches(json);
+                        if ((matches != null) && (matches.Count >= 1))
+                            value = matches[0].Value;
+                    }
+                    catch (Exception e)
+                    {
+                        Logger.Error(e.Message);
+                    }
+                }
+
+                if (value != null)
+                {
+                    ShowResult("Google VAS message", value, true); 
+                }
+                else if (errorGoogle != GoogleVasError.Success)
+                {
+                    ShowResult(string.Format("Read Google VAS error {0}", errorGoogle), null, true);
                 }
                 else
                 {
-                    ShowResult("read succeded but no SpringPass data found", null, true);
+                    ShowResult("Read Google VAS OK, but SpringPass data is missing", null, true);
                 }
                 return;
             }
-
-         
-
 
             ShowResult("Read message failed, reason: ", null, false);
         }
@@ -286,7 +322,7 @@ namespace SpringPassRdr
 
 		private void lkSubscribe_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 		{
-			System.Diagnostics.Process.Start("https://springpass.springcard.com");
+			System.Diagnostics.Process.Start("https://playground.springpass.prod.springcard.com/");
 		}
 
 		private void lkAbout_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -326,23 +362,53 @@ namespace SpringPassRdr
 
             LicenseData licenseDataGoogle = GoogleVasLicense.Get();
             LicenseData licenseDataApple = AppleVasLicense.Get();
-            ApplyLicense(licenseDataGoogle);
-            ApplyLicense(licenseDataApple);
+            
+            ApplyLicense("Google VAS", licenseDataGoogle, out bool validGoogle, out bool evalGoogle, out List<string> messagesGoogle);
+            ApplyLicense("Apple VAS", licenseDataApple, out bool validApple, out bool evalApple, out List<string> messagesApple);
+
+            List<string> messages = new List<string>();
+            if (messagesGoogle != null)
+                messages.AddRange(messagesGoogle);
+            if (messages.Count > 0)
+                messages.Add(""); /* Empty line */
+            if (messagesApple != null)
+                messages.AddRange(messagesApple);
+
+            if (!validGoogle || !validApple)
+            {
+                MessageBox.Show(this,
+                    string.Join("\n", messages),
+                    "License not found",
+                    MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+            else if (evalGoogle || evalApple)
+            {
+                lbEvaluation.Visible = true;
+                MessageBox.Show(this,
+                    string.Join("\n", messages),
+                    "Evaluation license",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
-        private void ApplyLicense(LicenseData licenseData)
+        private void ApplyLicense(string licenseTitle, LicenseData licenseData, out bool isValid, out bool isEval, out List<string> messages)
         {
+            messages = new List<string>();
             if (licenseData == null)
             {
-                MessageBox.Show(this, "Please click the \"License\" link to request a new license, or enter your licence data.", "No license found.", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                isValid = false;
+                isEval = false;
+                messages.Add(string.Format("No valid License has been found for the SpringCard Library for {0}.", licenseTitle));
+                messages.Add("Please contact SpringCard to buy a License or get an Evaluation License, and place the supplied License file in the same directory as the application.");
             }
             else
             {
-                lbEvaluation.Visible = licenseData.IsEvaluation;
+                isValid = true;
+                isEval = licenseData.IsEvaluation;
                 if (licenseData.HasTimeLimit)
                 {
-                    string title = licenseData.IsEvaluation ? "Evaluation license" : "Restricted license";
-                    MessageBox.Show(this, string.Format("This software will stop running after {0} minutes.", licenseData.TimeLimit), title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    messages.Add(string.Format("SpringCard Library for {0} is running with a time-restricted license.", licenseTitle));
+                    messages.Add(string.Format("The software will stop reading {0} passes after {1} minutes.", licenseTitle, licenseData.TimeLimit));
                 }
             }
         }

@@ -56,13 +56,13 @@
             // 
             // pTop
             // 
-            this.pTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
+            this.pTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(44)))), ((int)(((byte)(67)))));
             this.pTop.Controls.Add(this.lbEvaluation);
             this.pTop.Controls.Add(this.pictureBox2);
             this.pTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pTop.Location = new System.Drawing.Point(0, 0);
             this.pTop.Name = "pTop";
-            this.pTop.Size = new System.Drawing.Size(463, 86);
+            this.pTop.Size = new System.Drawing.Size(484, 86);
             this.pTop.TabIndex = 0;
             // 
             // lbEvaluation
@@ -91,9 +91,9 @@
             this.statusStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 290);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 439);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(463, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(484, 22);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -124,7 +124,7 @@
             this.panel1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 86);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(463, 204);
+            this.panel1.Size = new System.Drawing.Size(484, 353);
             this.panel1.TabIndex = 2;
             // 
             // lkSetAppleConfig
@@ -132,7 +132,7 @@
             this.lkSetAppleConfig.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
             this.lkSetAppleConfig.AutoSize = true;
             this.lkSetAppleConfig.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
-            this.lkSetAppleConfig.Location = new System.Drawing.Point(12, 166);
+            this.lkSetAppleConfig.Location = new System.Drawing.Point(12, 3);
             this.lkSetAppleConfig.Name = "lkSetAppleConfig";
             this.lkSetAppleConfig.Size = new System.Drawing.Size(142, 20);
             this.lkSetAppleConfig.TabIndex = 21;
@@ -161,7 +161,7 @@
             this.lkClear.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
             this.lkClear.AutoSize = true;
             this.lkClear.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
-            this.lkClear.Location = new System.Drawing.Point(728, 114);
+            this.lkClear.Location = new System.Drawing.Point(429, 209);
             this.lkClear.Name = "lkClear";
             this.lkClear.Size = new System.Drawing.Size(43, 20);
             this.lkClear.TabIndex = 18;
@@ -176,7 +176,7 @@
             this.lkAbout.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
             this.lkAbout.AutoSize = true;
             this.lkAbout.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
-            this.lkAbout.Location = new System.Drawing.Point(572, 525);
+            this.lkAbout.Location = new System.Drawing.Point(422, 3);
             this.lkAbout.Name = "lkAbout";
             this.lkAbout.Size = new System.Drawing.Size(50, 20);
             this.lkAbout.TabIndex = 11;
@@ -190,7 +190,7 @@
             this.lkSubscribe.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
             this.lkSubscribe.AutoSize = true;
             this.lkSubscribe.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
-            this.lkSubscribe.Location = new System.Drawing.Point(647, 525);
+            this.lkSubscribe.Location = new System.Drawing.Point(12, 321);
             this.lkSubscribe.Name = "lkSubscribe";
             this.lkSubscribe.Size = new System.Drawing.Size(124, 20);
             this.lkSubscribe.TabIndex = 12;
@@ -205,7 +205,7 @@
             this.lkRefresh.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
             this.lkRefresh.AutoSize = true;
             this.lkRefresh.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
-            this.lkRefresh.Location = new System.Drawing.Point(12, 65);
+            this.lkRefresh.Location = new System.Drawing.Point(12, 123);
             this.lkRefresh.Name = "lkRefresh";
             this.lkRefresh.Size = new System.Drawing.Size(128, 20);
             this.lkRefresh.TabIndex = 1;
@@ -219,7 +219,7 @@
             // 
             this.lkSetGoogleConfig.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
             this.lkSetGoogleConfig.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(10)))), ((int)(((byte)(29)))));
-            this.lkSetGoogleConfig.Location = new System.Drawing.Point(160, 166);
+            this.lkSetGoogleConfig.Location = new System.Drawing.Point(160, 3);
             this.lkSetGoogleConfig.Name = "lkSetGoogleConfig";
             this.lkSetGoogleConfig.Size = new System.Drawing.Size(156, 20);
             this.lkSetGoogleConfig.TabIndex = 3;
@@ -234,18 +234,18 @@
             this.eSpringPassData.AcceptsReturn = true;
             this.eSpringPassData.AcceptsTab = true;
             this.eSpringPassData.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.eSpringPassData.Location = new System.Drawing.Point(16, 137);
+            this.eSpringPassData.Location = new System.Drawing.Point(16, 232);
             this.eSpringPassData.Name = "eSpringPassData";
             this.eSpringPassData.ReadOnly = true;
             this.eSpringPassData.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.eSpringPassData.Size = new System.Drawing.Size(435, 26);
+            this.eSpringPassData.Size = new System.Drawing.Size(456, 26);
             this.eSpringPassData.TabIndex = 9;
             this.eSpringPassData.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lbMessage
             // 
             this.lbMessage.AutoSize = true;
-            this.lbMessage.Location = new System.Drawing.Point(12, 114);
+            this.lbMessage.Location = new System.Drawing.Point(12, 209);
             this.lbMessage.Name = "lbMessage";
             this.lbMessage.Size = new System.Drawing.Size(44, 20);
             this.lbMessage.TabIndex = 17;
@@ -257,7 +257,7 @@
             this.btnPause.BackgroundImage = global::SpringPassRdr.Properties.Resources.pause_button;
             this.btnPause.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPause.Enabled = false;
-            this.btnPause.Location = new System.Drawing.Point(231, 86);
+            this.btnPause.Location = new System.Drawing.Point(240, 155);
             this.btnPause.Name = "btnPause";
             this.btnPause.Size = new System.Drawing.Size(32, 30);
             this.btnPause.TabIndex = 8;
@@ -269,7 +269,7 @@
             this.btnPlay.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnPlay.BackgroundImage = global::SpringPassRdr.Properties.Resources.play_button;
             this.btnPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPlay.Location = new System.Drawing.Point(193, 86);
+            this.btnPlay.Location = new System.Drawing.Point(202, 155);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(32, 30);
             this.btnPlay.TabIndex = 7;
@@ -280,16 +280,16 @@
             // 
             this.cbReaders.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbReaders.FormattingEnabled = true;
-            this.cbReaders.Location = new System.Drawing.Point(16, 34);
+            this.cbReaders.Location = new System.Drawing.Point(16, 92);
             this.cbReaders.Name = "cbReaders";
-            this.cbReaders.Size = new System.Drawing.Size(435, 28);
+            this.cbReaders.Size = new System.Drawing.Size(456, 28);
             this.cbReaders.TabIndex = 0;
             this.cbReaders.SelectedIndexChanged += new System.EventHandler(this.cbReaders_SelectedIndexChanged);
             // 
             // lbReader
             // 
             this.lbReader.AutoSize = true;
-            this.lbReader.Location = new System.Drawing.Point(12, 12);
+            this.lbReader.Location = new System.Drawing.Point(12, 70);
             this.lbReader.Name = "lbReader";
             this.lbReader.Size = new System.Drawing.Size(103, 20);
             this.lbReader.TabIndex = 5;
@@ -299,7 +299,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(463, 312);
+            this.ClientSize = new System.Drawing.Size(484, 461);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.pTop);
